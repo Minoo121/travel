@@ -1,8 +1,10 @@
 {
-  "name": "My Travel App",
+  "name": "Travel Note",
   "short_name": "Travel",
   "start_url": "./index.html",
   "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4fa1f3",
   "icons": [
     {
       "src": "icons/icon-192.png",
