@@ -7,12 +7,12 @@
   "theme_color": "#4fa1f3",
   "icons": [
     {
-      "src": "icons/icon-192.png",
+      "src": "../img/trabel.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/icon-512.png",
+      "src": "../img/trabel.png",
       "sizes": "512x512",
       "type": "image/png"
     }
