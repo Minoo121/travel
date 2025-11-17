@@ -11,7 +11,7 @@ function pass_col() {
     input.value = toHankaku(input.value);
 
     if (pass == input.value) {
-        window.location.href = "../top.html"
+        window.location.href = "./top.html"
         return true;
     }
     error();
