@@ -17,6 +17,7 @@ header img {
 }
 
 main {
+    position: fixed;
     margin-top: 10px;    
 }
 
