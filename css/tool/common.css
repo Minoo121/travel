@@ -39,6 +39,7 @@ h2 {
 
 /*オーバーレイ関係*/
 
+/*オーバーレイレイアウト*/
 .model-overlay {
     position: fixed;
     top: 0;
@@ -90,6 +91,8 @@ h2 {
     padding: 0;
     margin: 0;
 }
+
+/*オーバーレイメソッド*/
 
 @keyframes fadeIn {
     from {
