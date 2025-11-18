@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./css/tool/common.css">
+    <link rel="stylesheet" href="./css/tool/common.css">
+    <link rel="stylesheet" href="./css/information.css">
     <title>旅館情報</title>
 </head>
+
 <body>
-        <header>
+    <header>
         <h1>旅館情報</h1>
         <button onclick="openModel()"><img src="./img/menu.png" alt="メニュー"></button>
         <div id="model" class="model-overlay">
             <div class="model-content">
                 <h2 onclick="closeModel()">別府旅行</h2>
                 <section id="" class="overlay" onclick="location.href = './schedule.html'">
-                    <img src="./img/left.png" alt="left"><h3>スケジュール</h3>
+                    <img src="./img/left.png" alt="left">
+                    <h3>スケジュール</h3>
                 </section>
                 <section class="overlay" onclick="location.href = './information.html'">
-                    <img src="./img/left.png" alt="left"><h3>旅館情報</h3>
+                    <img src="./img/left.png" alt="left">
+                    <h3>旅館情報</h3>
                 </section>
                 <section class="overlay" onclick="location.href = './activity.html'">
-                    <img src="./img/left.png" alt="left"><h3>アクティビティ</h3>
+                    <img src="./img/left.png" alt="left">
+                    <h3>アクティビティ</h3>
                 </section>
                 <section class="overlay" onclick="location.href = './map.html'">
-                    <img src="./img/left.png" alt="left"><h3>近辺マップ</h3>
+                    <img src="./img/left.png" alt="left">
+                    <h3>近辺マップ</h3>
                 </section>
             </div>
         </div>
     </header>
     <main>
+        <div id="slide_area">
+            <div id="slide">
+                <div id="image_area">
+                    <img id="img" src="./img/hoyourand.png">
+                </div>
+                <div id="list_area">
+                    <img id="listvalue1" src="./img/checked.png">
+                    <img id="listvalue2" src="./img/unchecked.png">
+                    <img id="listvalue3" src="./img/unchecked.png">
+                    <img id="listvalue4" src="./img/unchecked.png">
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 <script src="./script/tool/common.js"></script>
+<script src="./script/information.js"></script>
+
 </html>

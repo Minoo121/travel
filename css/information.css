@@ -1,0 +1,10 @@
+#slide_area{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#img {
+    border: solid 2px black;
+    width: 90vw;
+    height: 30%;
+}

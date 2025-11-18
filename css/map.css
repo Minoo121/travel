@@ -1,19 +1,12 @@
 main {
-    position: fixed;
+  max-height: fit-content;  
+  position: fixed;
     margin-top: 10px;    
 }
 
 main iframe {
-    position: fixed;
-    height: 87vh;
+    position: relative;
+    aspect-ratio: 100/183;
     width: 100vw;
-    transform: scale(1.1,1.0);
-}
-
-.modal-content {
-  background: white;
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 500px;
-  width: 90%;
+    left: -2%;
 }
