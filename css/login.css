@@ -12,13 +12,21 @@ body main {
     transform: translateX(-50%) translateY(-50%);
 }
 
-img{
+img {
     margin-bottom: 20%;
 }
 
 h1 {
     white-space: nowrap;
     margin-bottom: 10%;
+}
+
+p {
+    right: 25%;
+    left: 25%;
+    top: 100px;
+    z-index: 1000;
+    position: absolute;
 }
 
 input {
