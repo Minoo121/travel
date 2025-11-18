@@ -12,21 +12,28 @@ function toHankaku(input) {
   if (input == null) input = '';
   // 最終的に文字列に変換
   const str = String(input);
-  
+
   // 全角英数字・記号（！-～）を半角へ
   let out = str.replace(/[！-～]/g, ch =>
     String.fromCharCode(ch.charCodeAt(0) - 0xFEE0)
   );
-  
+
   // 全角スペースを半角に
   out = out.replace(/\u3000/g, ' ');
-  
+
   return out;
 }
+
+window.addEventListener("pageshow", function (event) {
+  if (event.persisted) {
+    location.reload(); // ← 戻ったとき強制リロード
+  }
+});
 //********************************************************* */
 //index.html
 //********************************************************* */
 document.getElementById("error").style.display = "none";
+document.getElementById("img").src = "./img/lock.png";
 
 function error() {
   document.getElementById("error").style.display = "block";
@@ -42,6 +49,7 @@ async function pass_col() {
     window.location.href = "./top.html"
     return true;
   }
+  document.getElementById("img").src = "./img/lock.png";
   error();
 }
 
