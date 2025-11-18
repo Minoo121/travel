@@ -1,20 +1,17 @@
 document.getElementById("error").style.display = "none";
 
 function error() {
-        document.getElementById("error").style.display = "block";
+  document.getElementById("error").style.display = "block";
 };
 
-
 function pass_col() {
-    let pass = 250208;
-    let input = document.getElementById("pass");
-    input.value = toHankaku(input.value);
-
-    if (pass == input.value) {
-        window.location.href = "./top.html"
-        return true;
-    }
-    error();
+  let pass = 250208;
+  let input = document.getElementById("pass");
+  if (pass == input.value) {
+    window.location.href = "./top.html"
+    return true;
+  }
+  error();
 }
 
 function toHankaku(input) {
