@@ -1,13 +1,18 @@
 document.getElementById("error").style.display = "none";
 
+const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));//timeはミリ秒
+
 function error() {
   document.getElementById("error").style.display = "block";
 };
 
-function pass_col() {
+async function pass_col() {
   let pass = 250208;
   let input = document.getElementById("pass");
+  input.value = toHankaku(input.value);
   if (pass == input.value) {
+    document.getElementById("img").src="../img/unlock.png";
+    await sleep(1000);
     window.location.href = "./top.html"
     return true;
   }
