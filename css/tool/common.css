@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "senobi";
+    src: url("../../font/Senobi-Gothic-Medium.ttf") format(truetype);
+}
+@font-face {
+    font-family: "irohamaru";
+    src: url("../../font/irohamaru-Medium.ttf") format(truetype);
+}
+
+h1{
+    font-family:"senobi";
+}
