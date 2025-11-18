@@ -18,7 +18,7 @@ img{
 
 h1 {
     white-space: nowrap;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 input {
@@ -27,18 +27,18 @@ input {
 }
 
 button {
-    margin-top: 10%;
+    margin-top: 20%;
     height: 50px;
-    width: 70%;
+    width: 80%;
     border-radius: 25px;
     background-color: white;
     margin-bottom: 20%;
 }
 
 button:active {
-    margin-top: 10%;
+    margin-top: 20%;
     height: 50px;
-    width: 70%;
+    width: 80%;
     border-radius: 20px;
     color: #fff;
     background: #000;
