@@ -12,6 +12,10 @@ body main {
     transform: translateX(-50%) translateY(-50%);
 }
 
+img{
+    margin-bottom: 40%;
+}
+
 h1 {
     white-space: nowrap;
     margin-bottom: 40%;
@@ -39,13 +43,14 @@ button:active {
     background: #000;
 }
 
-button:after{
+button:after {
     margin-top: 10%;
     height: 50px;
     width: 70%;
     border-radius: 10%;
     background-color: white;
 }
+
 #error {
     color: red;
 }
