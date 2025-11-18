@@ -37,7 +37,7 @@ async function pass_col() {
   let input = document.getElementById("pass");
   input.value = toHankaku(input.value);
   if (pass == input.value) {
-    document.getElementById("img").src = "../img/unlock.png";
+    document.getElementById("img").src = "./img/unlock.png";
     await sleep(1000);
     window.location.href = "./top.html"
     return true;
