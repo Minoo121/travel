@@ -1,18 +1,18 @@
 {
-  "name": "Travel Note",
-  "short_name": "Travel",
+  "name": "旅行のしおり",
+  "short_name": "別府旅行",
   "start_url": "/travel/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4fa1f3",
   "icons": [
     {
-      "src": "../img/trabel.png",
+      "src": "../img/travel.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "../img/trabel.png",
+      "src": "../img/travel.png",
       "sizes": "512x512",
       "type": "image/png"
     }
