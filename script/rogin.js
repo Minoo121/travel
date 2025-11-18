@@ -1,7 +1,6 @@
 document.getElementById("error").style.display = "none";
 
 function error() {
-
         document.getElementById("error").style.display = "block";
 };
 
