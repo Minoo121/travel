@@ -13,14 +13,22 @@
 <body>
     <header>
         <h1>近辺マップ</h1>
-       <button type="button"><img src="./img/menu.png" alt="メニュー" onclick="openoverlay()"></button>
+       <button onclick="openModel()"><img src="./img/menu.png" alt="メニュー"></button>
     </header>
     <main>
+        <div id="model" class="model-overlay">
+            <div class="model-content">
+                <h2>モーダルウィンドウ</h2>
+                <p>ここに自由な内容を入れられます</p>
+                <button onclick="closeModel()">閉じる</button>
+            </div>
+        </div>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.997723938139!2d131.47254107568526!3d33.31887497344196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3546a798c072b3d3%3A0xffc6b9f9c4c7613d!2z57W25pmv44Gu5a6_IOOBleOBj-OCieS6rQ!5e0!3m2!1sja!2sjp!4v1763467453265!5m2!1sja!2sjp"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
 </body>
+<script src="./script/tool/common.js"></script>
 <script src="./script/map.js"></script>
 </html>
