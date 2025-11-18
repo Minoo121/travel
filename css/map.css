@@ -23,7 +23,7 @@ main {
 
 main iframe {
     position: fixed;
-    height: 90vh;
+    height: 94vh;
     width: 100vw;
     transform: scale(1.1,1.0);
 }
