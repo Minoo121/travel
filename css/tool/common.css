@@ -1,52 +1,114 @@
+/*フォント追加*/
+
 @font-face {
     font-family: "senobi";
     src: url("../../font/Senobi-Gothic-Medium.ttf") format(truetype);
 }
+
 @font-face {
     font-family: "irohamaru";
     src: url("../../font/irohamaru-Medium.ttf") format(truetype);
 }
 
-h1{
-    font-family:"senobi";
+/*汎用*/
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    border: solid 1px black;
+    box-shadow: 10px 10px 0px rgb(52, 52, 52);
 }
 
-.model-overlay{
+header button {
+    border: none;
+    background: none;
+    margin-left: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    height: 30%;
+}
+
+h1,
+h2 {
+    font-family: "senobi";
+}
+
+
+/*オーバーレイ関係*/
+
+.model-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-    /*display: none;*/
+    display: none;
     justify-content: flex-end;
     align-items: center;
     z-index: 9999;
     animation: fadeIn 0.2s;
 }
 
-.model-content{
+.model-content {
     background-color: #fff;
-    padding: 20px;
+    padding-right: 0px;
     height: 100%;
     width: 70%;
     z-index: 10000;
     animation: slideUp 0.25s;
 }
 
-.model-content h2{
+.model-content h2 {
     font-size: 45px;
     top: 10px;
     text-align: right;
+    border-bottom: double 7px black;
+}
+
+.overlay {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10%;
     border-bottom: solid 1px black;
 }
 
+.overlay img {
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    width: 10%;
+    height: 10%;
+}
+
+.overlay h3 {
+    margin-left: 0%;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+}
+
 @keyframes fadeIn {
-    from { opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-    from { transform: translateX(20px);opacity: 0;}
-    to { transform: translateX(0);opacity: 1;}
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
