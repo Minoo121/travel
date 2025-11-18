@@ -1,7 +1,7 @@
 {
   "name": "Travel Note",
   "short_name": "Travel",
-  "start_url": "/travel/",
+  "start_url": "/travel",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4fa1f3",
