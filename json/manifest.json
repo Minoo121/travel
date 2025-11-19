@@ -20,7 +20,7 @@
     "ios": {
     "apple_mobile_web_app_capable": "yes",
     "apple_mobile_web_app_status_bar_style": "black-translucent",
-    "apple_touch_icon": "icon.png",
-    "apple_mobile_web_app_title": "My App"
+    "apple_touch_icon": "../img/travel.png",
+    "apple_mobile_web_app_title": "旅行のしおり"
   }
 }
