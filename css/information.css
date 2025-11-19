@@ -112,6 +112,12 @@
     z-index: 10;
     align-items: center;
 }
+.indicator button{
+    padding: 0;
+    border: none;
+    color: none;
+    background: none;
+}
 
 .indicator li {
     width: 14px;
