@@ -7,12 +7,12 @@
   "theme_color": "#4fa1f3",
   "icons": [
     {
-      "src": "../img/travel.png",
+      "src": "../img/icon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "../img/travel.png",
+      "src": "../img/icon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -20,7 +20,7 @@
     "ios": {
     "apple_mobile_web_app_capable": "yes",
     "apple_mobile_web_app_status_bar_style": "black-translucent",
-    "apple_touch_icon": "../img/travel.png",
+    "apple_touch_icon": "../img/icon.png",
     "apple_mobile_web_app_title": "旅行のしおり"
   }
 }
