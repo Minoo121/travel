@@ -1,0 +1,1 @@
+document.getElementById("hyoutan_desc").;
