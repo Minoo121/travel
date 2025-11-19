@@ -31,6 +31,10 @@ header button {
     height: 30%;
 }
 
+main{
+    margin-top: 10px;
+}
+
 h1,
 h2 {
     font-family: "senobi";

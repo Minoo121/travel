@@ -1,0 +1,92 @@
+#hyoutan_descbutton {
+    position: absolute;
+    bottom: -20px;
+    /* borderの上に配置 */
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 100%;
+}
+
+#hyoutan_descbutton img{
+    margin: 5px 0px;
+    height:25.2px;
+    width: 25.2px;
+}
+
+#kaori_descbutton {
+    position: absolute;
+    bottom: -20px;
+    /* borderの上に配置 */
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 100%;
+}
+
+#kaori_descbutton img{
+    margin: 5px 0px;
+    height:25.2px;
+    width: 25.2px;
+}
+
+#yufuin_descbutton {
+    position: absolute;
+    bottom: -20px;
+    /* borderの上に配置 */
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 100%;
+}
+
+#yufuin_descbutton img{
+    margin: 5px 0px;
+    height:25.2px;
+    width: 25.2px;
+}
+
+#hoyou_descbutton {
+    position: absolute;
+    bottom: -20px;
+    /* borderの上に配置 */
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    border-radius: 100%;
+}
+
+#hoyou_descbutton img{
+    margin: 5px 0px;
+    height:25.2px;
+    width: 25.2px;
+}
+
+main section {
+    width: 80vw;
+    margin: 50px auto;
+    border: 2px solid #333;
+    padding: 20px;
+    position: relative;
+}
+
+section h2{
+    
+    border-bottom: solid 1px black;
+}

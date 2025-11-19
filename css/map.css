@@ -1,7 +1,6 @@
 main {
   max-height: fit-content;  
-  position: fixed;
-    margin-top: 10px;    
+  position: fixed;    
 }
 
 main iframe {
