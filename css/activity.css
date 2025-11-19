@@ -15,16 +15,23 @@
     border-radius: 100%;
 }
 
-#hyoutan_desc{
+#hyoutan_desc {
     display: none;
-    border: solid 1px black;
 }
 
-#hyoutan_descbutton img{
+#hyoutan_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#hyoutan_descbutton img {
     margin: 5px 0px;
-    height:25.2px;
+    height: 25.2px;
     width: 25.2px;
 }
+
 /********************************************************* */
 /*香り博物館*/
 /********************************************************* */
@@ -42,9 +49,20 @@
     border-radius: 100%;
 }
 
-#kaori_descbutton img{
+#kaori_desc {
+    display: none;
+}
+
+#kaori_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#kaori_descbutton img {
     margin: 5px 0px;
-    height:25.2px;
+    height: 25.2px;
     width: 25.2px;
 }
 
@@ -66,9 +84,20 @@
     border-radius: 100%;
 }
 
-#yufuin_descbutton img{
+#yufuin_desc {
+    display: none;
+}
+
+#yufuin_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#yufuin_descbutton img {
     margin: 5px 0px;
-    height:25.2px;
+    height: 25.2px;
     width: 25.2px;
 }
 
@@ -90,9 +119,20 @@
     border-radius: 100%;
 }
 
-#hoyou_descbutton img{
+#hoyou_desc {
+    display: none;
+}
+
+#hoyou_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#hoyou_descbutton img {
     margin: 5px 0px;
-    height:25.2px;
+    height: 25.2px;
     width: 25.2px;
 }
 
@@ -108,7 +148,6 @@ main section {
     position: relative;
 }
 
-section h2{
-    
+section h2 {
     border-bottom: solid 1px black;
 }
