@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./img/travel.png">
+    <meta name="apple-mobile-web-app-title" content="旅行のしおり">
+
+
     <link rel="stylesheet" href="./css/tool/common.css">
     <title>アクティビティ</title>
 </head>
+
 <body>
-        <header>
+    <header>
         <h1>アクティビティ</h1>
         <button onclick="openModel()"><img src="./img/menu.png" alt="メニュー"></button>
         <div id="model" class="model-overlay">
             <div class="model-content">
                 <h2 onclick="closeModel()">別府旅行</h2>
                 <section id="" class="overlay" onclick="location.href = './schedule.html'">
-                    <img src="./img/left.png" alt="left"><h3>スケジュール</h3>
+                    <img src="./img/left.png" alt="left">
+                    <h3>スケジュール</h3>
                 </section>
                 <section class="overlay" onclick="location.href = './information.html'">
-                    <img src="./img/left.png" alt="left"><h3>旅館情報</h3>
+                    <img src="./img/left.png" alt="left">
+                    <h3>旅館情報</h3>
                 </section>
                 <section class="overlay" onclick="location.href = './activity.html'">
-                    <img src="./img/left.png" alt="left"><h3>アクティビティ</h3>
+                    <img src="./img/left.png" alt="left">
+                    <h3>アクティビティ</h3>
                 </section>
                 <section class="overlay" onclick="location.href = './map.html'">
-                    <img src="./img/left.png" alt="left"><h3>近辺マップ</h3>
+                    <img src="./img/left.png" alt="left">
+                    <h3>近辺マップ</h3>
                 </section>
             </div>
         </div>
@@ -31,4 +43,5 @@
     <main>
 </body>
 <script src="./script/tool/common.js"></script>
+
 </html>
