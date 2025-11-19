@@ -46,7 +46,7 @@ async function pass_col() {
   if (pass == input.value) {
     document.getElementById("img").src = "./img/unlock.png";
     await sleep(500);
-    window.location.href = "./map.html"
+    window.location.href = "./schedule.html"
     return true;
   }
   document.getElementById("img").src = "./img/lock.png";
