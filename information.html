@@ -36,18 +36,33 @@
         </div>
     </header>
     <main>
-        <div id="slide_area">
-            <div id="slide">
-                <div id="image_area">
-                    <img id="img" src="./img/hoyourand.png">
+        <!-- スライドの外枠 -->
+        <div class="slide-wrapper">
+            <!-- スライド（コンテンツ） -->
+            <div id="slide" class="slide">
+                <div>
+                    <img src="./img/sakuratei_1.png">
                 </div>
-                <div id="list_area">
-                    <img id="listvalue1" src="./img/checked.png">
-                    <img id="listvalue2" src="./img/unchecked.png">
-                    <img id="listvalue3" src="./img/unchecked.png">
-                    <img id="listvalue4" src="./img/unchecked.png">
+                <div>
+                    <img src="./img/sakuratei_2.png">
+                </div>
+                <div>
+                    <img src="./img/sakuratei_3.png">
+                </div>
+                <div>
+                    <img src="./img/sakuratei_4.png">
                 </div>
             </div>
+            <!-- 左右のボタン -->
+            <span id="prev" class="prev"></span>
+            <span id="next" class="next"></span>
+            <!-- インジケーター -->
+            <ul class="indicator" id="indicator">
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+            </ul>
         </div>
     </main>
 </body>

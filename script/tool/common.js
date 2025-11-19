@@ -1,3 +1,6 @@
+//********************************************************* */
+//汎用
+//********************************************************* */
 function openModel(){
     let model = document.getElementById("model");
     model.style.display = "flex";
