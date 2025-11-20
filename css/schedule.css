@@ -1,0 +1,70 @@
+/********************************************************* */
+/*３月３日*/
+/********************************************************* */
+
+#three_day {
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#three_day img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-position: left top;
+    display: inline-block;
+}
+
+/********************************************************* */
+/*３月４日*/
+/********************************************************* */
+
+#for_day {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#for_day img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-position: right top;
+    display: inline-block;
+}
+
+/********************************************************* */
+/*３月５日*/
+/********************************************************* */
+
+#five_day {
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+#five_day img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-position: left top;
+    display: inline-block;
+}
+
+/********************************************************* */
+/*全体*/
+/********************************************************* */
+main {
+    max-width: 100vw;
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 50% 40%;
+}
+
+main img {
+    width: 200px;
+    height: 140px;
+}
