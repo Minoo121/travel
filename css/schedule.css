@@ -3,9 +3,12 @@
 /********************************************************* */
 
 #three_day {
-    display: flex;
     grid-column: 1/3;
     grid-row: 1/2;
+}
+
+#three_day th {
+    display: flex;
 }
 
 #three_day img {
@@ -20,14 +23,15 @@
 /*３月４日*/
 /********************************************************* */
 
-#for_day {
+#four_day {
     display: flex;
     justify-content: flex-end;
     grid-column: 1/3;
     grid-row: 2/3;
 }
 
-#for_day img {
+#four_day img {
+    align-items: center;
     width: 180px;
     height: 180px;
     border-radius: 50%;
