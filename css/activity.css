@@ -15,7 +15,31 @@
 }
 
 #hyoutan_desc {
-    display: none;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.25s ease;
+}
+
+
+#hyoutan_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#hyoutan_desc.opening,
+#hyoutan_desc.closing,
+#hyoutan_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#hyoutan_desc.open {
+    opacity: 1;
 }
 
 #hyoutan_desc img {
@@ -48,7 +72,31 @@
 }
 
 #kaori_desc {
-    display: none;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.25s ease;
+}
+
+
+#kaori_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#kaori_desc.opening,
+#kaori_desc.closing,
+#kaori_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#kaori_desc.open {
+    opacity: 1;
 }
 
 #kaori_desc img {
@@ -63,6 +111,7 @@
     height: 25.2px;
     width: 25.2px;
 }
+
 
 /********************************************************* */
 /*湯布院フローラルヴィレッジ*/
@@ -81,7 +130,31 @@
 }
 
 #yufuin_desc {
-    display: none;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.35s ease;
+    display: block; /* ← display:none は使わない */
+}
+
+#yufuin_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#yufuin_desc.opening,
+#yufuin_desc.closing,
+#yufuin_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#yufuin_desc.open {
+    opacity: 1;
 }
 
 #yufuin_desc img {
@@ -114,7 +187,31 @@
 }
 
 #hoyou_desc {
-    display: none;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.35s ease;
+    display: block; /* ← display:none は使わない */
+}
+
+#hoyou_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#hoyou_desc.opening,
+#hoyou_desc.closing,
+#hoyou_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#hoyou_desc.open {
+    opacity: 1;
 }
 
 #hoyou_desc img {
