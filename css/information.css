@@ -14,7 +14,7 @@
     width: 400%;
     height: 100%;
     display: flex;
-    transition: all 0.3s;
+    transition: all 1.5s;
 }
 
 .slide div {
