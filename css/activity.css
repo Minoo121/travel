@@ -3,15 +3,12 @@
 /********************************************************* */
 
 #hyoutan_descbutton {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    border: 1px solid #333;
-    border-radius: 100%;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
 }
 
 #hyoutan_desc {
@@ -50,7 +47,7 @@
 }
 
 #hyoutan_descbutton img {
-    margin: 5px 0px;
+    margin-bottom: -5px;
     height: 25.2px;
     width: 25.2px;
 }
@@ -60,15 +57,12 @@
 /********************************************************* */
 
 #kaori_descbutton {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    border: 1px solid #333;
-    border-radius: 100%;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
 }
 
 #kaori_desc {
@@ -107,7 +101,7 @@
 }
 
 #kaori_descbutton img {
-    margin: 5px 0px;
+    margin-bottom: -5px;
     height: 25.2px;
     width: 25.2px;
 }
@@ -118,15 +112,12 @@
 /********************************************************* */
 
 #yufuin_descbutton {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    border: 1px solid #333;
-    border-radius: 100%;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
 }
 
 #yufuin_desc {
@@ -166,7 +157,7 @@
 }
 
 #yufuin_descbutton img {
-    margin: 5px 0px;
+    margin-bottom: -5px;
     height: 25.2px;
     width: 25.2px;
 }
@@ -176,15 +167,12 @@
 /********************************************************* */
 
 #hoyou_descbutton {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    height: 40px;
-    width: 40px;
-    transform: translateX(-50%);
-    background-color: #ffffff;
-    border: 1px solid #333;
-    border-radius: 100%;
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
 }
 
 #hoyou_desc {
@@ -224,7 +212,7 @@
 }
 
 #hoyou_descbutton img {
-    margin: 5px 0px;
+    margin-bottom: -5px;
     height: 25.2px;
     width: 25.2px;
 }
@@ -234,10 +222,9 @@
 /********************************************************* */
 
 main section {
-    width: 80vw;
-    margin: 50px auto;
+    width: 90vw;
+    margin: 11% auto;
     border: 2px solid #333;
-    padding: 20px;
     position: relative;
 }
 
