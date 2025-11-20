@@ -1,11 +1,11 @@
 main {
-  max-height: fit-content;  
-  position: fixed;    
+  max-height: fit-content;
+  position: fixed;
 }
 
 main iframe {
-    position: relative;
-    aspect-ratio: 100/183;
-    width: 100vw;
-    left: -2%;
+  position: relative;
+  aspect-ratio: 100/183;
+  width: 100vw;
+  left: -2%;
 }

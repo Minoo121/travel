@@ -10,11 +10,12 @@
     font-family: "irohamaru";
     src: url("../../font/irohamaru-Medium.ttf") format(truetype);
 }
+
 /********************************************************* */
 /*汎用*/
 /********************************************************* */
 
-*:focus{
+*:focus {
     outline: none;
 }
 
@@ -37,7 +38,7 @@ header button {
     height: 30%;
 }
 
-main{
+main {
     margin-top: 10px;
 }
 
