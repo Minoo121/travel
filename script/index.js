@@ -30,6 +30,35 @@ window.addEventListener("pageshow", function (event) {
   }
 });
 
+  fetch('manifest.json')
+    .then(response => response.json())
+    .then(data => {
+      if (data.ios) {
+        const head = document.head;
+
+        const meta1 = document.createElement('meta');
+        meta1.name = 'apple-mobile-web-app-capable';
+        meta1.content = data.ios.apple_mobile_web_app_capable;
+        head.appendChild(meta1);
+
+        const meta2 = document.createElement('meta');
+        meta2.name = 'apple-mobile-web-app-status-bar-style';
+        meta2.content = data.ios.apple_mobile_web_app_status_bar_style;
+        head.appendChild(meta2);
+
+        const link = document.createElement('link');
+        link.rel = 'apple-touch-icon';
+        link.size = '180x180'
+        link.href = data.ios.apple_touch_icon;
+        head.appendChild(link);
+
+        const meta3 = document.createElement('meta');
+        meta3.name = 'apple-mobile-web-app-title';
+        meta3.content = data.ios.apple_mobile_web_app_title;
+        head.appendChild(meta3);
+      }
+    });
+
 //********************************************************* */
 //index.html
 //********************************************************* */
