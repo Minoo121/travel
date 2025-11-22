@@ -2,54 +2,57 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="manifest" href="./json/manifest.json">
-    <title>ログイン</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/icon.png">
+  <link rel="stylesheet" href="./css/login.css">
+  <meta name="apple-mobile-web-app-title" content="旅行のしおり">
+  <link rel="manifest" href="./json/manifest.json">
+  <title>ログイン</title>
 </head>
 
 <body>
-    <main>
-        <div>
-            <img src="./img/lock.png" alt="鍵" width="90px" id="img">
-            <h1>パスワードを入力してね</h1>
-            <p id="error">パスワードが違います。</p>
-            <input type="text" name="pass" value="" id="pass" placeholder="abcd...">
-        </div>
-        <button type="submit" onclick="pass_col()">トップへ</button>
-    </main>
+  <main>
+    <div>
+      <img src="./img/lock.png" alt="鍵" width="90px" id="img">
+      <h1>パスワードを入力してね</h1>
+      <p id="error">パスワードが違います。</p>
+      <input type="text" name="pass" value="" id="pass" placeholder="abcd...">
+    </div>
+    <button type="submit" onclick="pass_col()">トップへ</button>
+  </main>
 </body>
 
 <script src="./script/index.js"></script>
 <script>
-    fetch('manifest.json')
-  .then(response => response.json())
-  .then(data => {
-    if(data.ios){
-      const head = document.head;
+  fetch('manifest.json')
+    .then(response => response.json())
+    .then(data => {
+      if (data.ios) {
+        const head = document.head;
 
-      const meta1 = document.createElement('meta');
-      meta1.name = 'apple-mobile-web-app-capable';
-      meta1.content = data.ios.apple_mobile_web_app_capable;
-      head.appendChild(meta1);
+        const meta1 = document.createElement('meta');
+        meta1.name = 'apple-mobile-web-app-capable';
+        meta1.content = data.ios.apple_mobile_web_app_capable;
+        head.appendChild(meta1);
 
-      const meta2 = document.createElement('meta');
-      meta2.name = 'apple-mobile-web-app-status-bar-style';
-      meta2.content = data.ios.apple_mobile_web_app_status_bar_style;
-      head.appendChild(meta2);
+        const meta2 = document.createElement('meta');
+        meta2.name = 'apple-mobile-web-app-status-bar-style';
+        meta2.content = data.ios.apple_mobile_web_app_status_bar_style;
+        head.appendChild(meta2);
 
-      const link = document.createElement('link');
-      link.rel = 'apple-touch-icon';
-      link.href = data.ios.apple_touch_icon;
-      head.appendChild(link);
+        const link = document.createElement('link');
+        link.rel = 'apple-touch-icon';
+        link.href = data.ios.apple_touch_icon;
+        head.appendChild(link);
 
-      const meta3 = document.createElement('meta');
-      meta3.name = 'apple-mobile-web-app-title';
-      meta3.content = data.ios.apple_mobile_web_app_title;
-      head.appendChild(meta3);
-    }
-  });
+        const meta3 = document.createElement('meta');
+        meta3.name = 'apple-mobile-web-app-title';
+        meta3.content = data.ios.apple_mobile_web_app_title;
+        head.appendChild(meta3);
+      }
+    });
 </script>
+
 </html>
