@@ -13,7 +13,6 @@
 
 #hyoutan_desc {
     overflow: hidden;
-    font-family: "irohamaru";
     height: 0;
     opacity: 0;
     transition:
@@ -68,7 +67,6 @@
 
 #kaori_desc {
     overflow: hidden;
-    font-family: "irohamaru";
     height: 0;
     opacity: 0;
     transition:
@@ -124,7 +122,6 @@
 
 #yufuin_desc {
     overflow: hidden;
-    font-family: "irohamaru";
     height: 0;
     opacity: 0;
     transition:
@@ -180,7 +177,6 @@
 
 #hoyou_desc {
     overflow: hidden;
-    font-family: "irohamaru";
     height: 0;
     opacity: 0;
     transition:
