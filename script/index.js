@@ -33,11 +33,10 @@ window.addEventListener("pageshow", function (event) {
 //********************************************************* */
 //index.html
 //********************************************************* */
-document.getElementById("error").style.display = "none";
 document.getElementById("img").src = "./img/lock.png";
 
 function error() {
-  document.getElementById("error").style.display = "block";
+  document.getElementById("error").classList.add("show");
 };
 
 async function pass_col() {

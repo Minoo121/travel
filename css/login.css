@@ -21,14 +21,6 @@ h1 {
     margin-bottom: 10%;
 }
 
-p {
-    right: 25%;
-    left: 25%;
-    top: 100px;
-    z-index: 1000;
-    position: absolute;
-}
-
 input {
     height: 30px;
     font-size: large;
@@ -55,5 +47,16 @@ button:active {
 }
 
 #error {
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    /* 好きな位置に調整 */
+    transform: translateX(-50%);
     color: red;
+    visibility: hidden;
+    /* ← レイアウトに影響しない */
+}
+
+#error.show {
+    visibility: visible; /* ← 表示 */
 }

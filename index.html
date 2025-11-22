@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="apple-touch-icon" sizes="180x180" href="./img/icon.png">
-  <link rel="stylesheet" href="./css/login.css">
   <meta name="apple-mobile-web-app-title" content="旅行のしおり">
+  <link rel="stylesheet" href="./css/login.css">
   <link rel="manifest" href="./json/manifest.json">
   <title>ログイン</title>
 </head>
@@ -44,6 +44,7 @@
 
         const link = document.createElement('link');
         link.rel = 'apple-touch-icon';
+        link.size = '180x180'
         link.href = data.ios.apple_touch_icon;
         head.appendChild(link);
 
