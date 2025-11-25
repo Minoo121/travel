@@ -1,3 +1,10 @@
+/* 透明なオーバーレイがかぶっていると誤判定されるため */
+body,
+main {
+    pointer-events: auto !important;
+}
+
+
 /* ★ body の flex を消す（これが iPhone のバグ原因） */
 body {
     text-align: center;
@@ -12,6 +19,9 @@ main {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    touch-action: manipulation;
+    pointer-events: auto;
 }
 
 /* 画像 */
@@ -40,6 +50,9 @@ button {
     border-radius: 25px;
     background-color: white;
     margin-bottom: 20%;
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
 }
 
 button:active {
