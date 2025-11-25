@@ -36,20 +36,35 @@
         </div>
     </header>
     <main>
+        <h1 id="place" style="margin-top: 8%;">別府</h1>
         <section id="hyoutan">
             <button id="hyoutan_descbutton" onclick="descbutton('hyoutan')">
                 <h2>ひょうたん温泉 <img src="./img/ander.png" id="hyoutan_descbutton_img"></h2>
             </button>
             <div id="hyoutan_desc" class="hidden">
                 <p style="text-align: center;">
-                    ホテルからの所要時間：14分程度
+                    ホテルからの所要時間：徒歩14分程度<br>
+                    定休日:年中無休<br>
+                    営業時間:9:00〜1:00
+                    <br><br>
+                    大浴場入浴料:大人1,080円(13歳以上)
+                    <br><br>
+                    家族風呂さくっと60分コース:2,400円<br>
+                    ゆったり75分コース:3,000円<br>
+                    のんびり90分コース:3,600円
+                    <br><br>
+                    砂湯貸し浴衣(砂湯用パンツ込):760円<br>
+                    タオル:250円<br>
+                    貸しバスタオル:200円<br>
+                    ナイロンタオル:250円
                 </p>
                 <p>
                 <h3 id="subtitle">
                     男湯女湯共通
                 </h3>
                 <h3>大浴場</h3>
-                <img src="./img/hyoutanonsen.png" alt="ひょうたん温泉">
+                <img src="./img/hyoutanonsen.png" alt="ひょうたん温泉"
+                    onclick="location.href = 'https://www.hyotan-onsen.com/'">
                 ひょうたん温泉®のお湯は「純度100%の源泉かけ流し」。<br>
                 多くの温泉施設では、温度調整に水道水の加水や、
                 長い時間をかけた自然冷却で冷えた源泉を使用していますが、
@@ -153,8 +168,15 @@
                 <h2>香りの博物館<img src="./img/ander.png" id="kaori_descbutton_img"></h2>
             </button>
             <div id="kaori_desc" class="hidden">
-                <p style="text-align: center;">
-                    ホテルからの所要時間：24分程度
+                <p id="info">
+                    ホテルからの所要時間：公共交通機関24分程度<br>
+                    休館日:博物館・毎月第3木曜日 <br>
+                    12月31日、1月1日～1月3日<br>
+                    カフェ 定休日：毎月第１、第３月曜日、日曜日<br>
+                    営業時間:10:00〜18:00<br>
+                    　入館料:一般700円<br>
+                    　高校・大学生500円 <br>
+                    instagram: <a href="https://www.instagram.com/oita_kaori/">大分香りの博物館</a>
                 </p>
                 <p>
                     <img src="./img/kaorinohakubutukan.png" alt="香りの博物館"
@@ -188,8 +210,17 @@
                 <h2>湯布院フローラルヴィレッジ<img src="./img/ander.png" id="yufuin_descbutton_img"></h2>
             </button>
             <div id="yufuin_desc" class="hidden">
-                <p style="text-align: center;">
-                    ホテルからの所要時間：1時間10分程度
+                <p id="info">
+                    ホテルからの所要時間：公共交通機関1時間10分程度<br>
+                    定休日:年中無休<br>
+                    営業時間:9:30〜17:30<br>
+                    入場料:無料
+                    <br><br>
+                    フクロウの森入場料:大人700円(13歳以上)
+                    <br><br>
+                    チェシャ猫の森入場料:大人800円(13歳以上)
+                    <br><br>
+                    ※：トイレ使用時にフローラルヴィレッジで買い物したレシートを提示が必要
                 </p>
                 <p>
                     <img src="./img/yufuinfuro-raruvireggi.png" alt="湯布院フローラルヴィレッジ"
@@ -203,7 +234,8 @@
                     写真は「ハリー・ポッター」シリーズでもおなじみのハリーが飼っている、シロフクロウの「ヘドウィグ」。
                     （こちらでも同じ名前）丸っこい雪だるまみたいで、思わず触れてみたくなりますね。
                     「Owl's Photo Studio」では、フクロウの手乗せ体験もできちゃいます。
-                    ハリーポッター風のローブを着て、魔法の杖を持ち、アフリカワシミミズクのブラウンを手にのせて記念撮影ができますよ。
+                    ハリーポッター風のローブを着て、魔法の杖を持ち、アフリカワシミミズクのブラウンを手にのせて記念撮影ができますよ。<br>
+                    <span style="border-bottom: solid 1px black;">※手乗せ体験・写真撮影：３００円（入場料別）</span>
                     <br><br>
                     ほかにもムーミンファン必見の「Moomin’s Shop」や
                     ピーターラビットと仲間たちのグッズが揃う「The Rabbit」、
@@ -216,33 +248,79 @@
                 <h2>保養ランド<img src="./img/ander.png" id="hoyou_descbutton_img"></h2>
             </button>
             <div id="hoyou_desc" class="hidden">
-                <p style="text-align: center;">
-                    ホテルからの所要時間：14分程度
+                <p id="info">
+                    ホテルからの所要時間：徒歩14分程度<br>
+                    定休日:年中無休<br>
+                    営業時間:9:00〜20:00<br>
+                    入浴料:1,500円
                 </p>
                 <p>
                     <img src="./img/hoyourand.png" alt="保養ランド" onclick="location.href = 'https://hoyoland.net/'">
                 <h3>
-                    紺屋鉱泥
+                    露天鉱泥浴場
                 </h3>
-                最上の泥が必要とする適度な噴気と腐植粘土層と地下水との三拍子そろう恵まれた条件のもとに産出されています。<br>
-                第一に、適量の腐植粘土【humus:mold】に残留する物質であるフミン【humin】は入浴中に体の表面から出るミネラルイオン、
-                毒性物質等と結び付いて、無害にするなどの作用があります。
+                適度な噴気、腐食粘土層、ミネラル水という三大条件のもとにのみ産出される鉱泥は
+                他に類をみない稀少且つ貴重な地獄から直結した温泉です。
                 <br><br>
-                第二に、紺屋地獄の噴気は硫黄が主成分であり適度な硫黄化水素ガス【H2S】を含む硫黄化水素型の硫黄泉です。<br>
-                硫黄化水素ガスは末梢神経を拡張する作用が強いので、血管の動きをコントロールしている【自律神経：交感神経と副交感神経】
-                の副交感神経の方の働きを高める効果があるので血管を弛緩させます。
+                普通の温泉より比重が重く浮力が大きいので浸かると不思議な浮遊感が楽しめます。
                 <br><br>
-                第一、第二から『放射線障害』『甲状腺機能亢進症：バセドウ病』等『放射線障害』『高血圧』『動脈硬化症』そして血行不良により出来る血栓【心筋梗塞・脳梗塞等の原因】に効果があります。<br>
-                他に重金属解毒作用【水俣病等】や催眠作用もあります。<br>
-                さらに紺屋泥浴は、血管を拡張し血圧を下げ血糖を抑えるので、生命維持に重要なホルモンである【副腎皮質ホルモン】を賦活します。<br>
-                『副腎皮質ホルモン剤：ステロイド系』の薬剤は、よく効くけれど副作用があり止めるのも中々難しいものですが、泥浴をしながら漸減していくと上手くいきます。<br>
-                そのことにより医療費削減のメリットもあります。
+                風呂の中には掴まり棒があります。<br>
+                お湯の流れにもてあそばれないように、しっかり掴まって下さい。<br>
+                重力を忘れ、宇宙遊泳をしているようなこの状態は、血流を良くして、関節炎、肩こりに効力を顕します。<br>
+                体が開放されたこの状態は、硫黄成分の浸透力を非常に高め、リュウマチ治癒に絶大な効果を発揮します。<br>
+                泥湯は全般に、水からの沸し湯に比べ５倍の熱保有度を持ちます。<br>
+                地下鉱泥ゆは、それよりさらに熱保有度が高く、成分が濃厚で浸透が早いので長湯は禁物です。<br>
+                湯あたりしないように10～15分位で他のお風呂に移動するよう注意を促しています。
+
+                </p>
+            </div>
+        </section>
+        <section id="goemon">
+            <button id="goemon_descbutton" onclick="descbutton('goemon')">
+                <h2>茶·cha GOEMON<img src="./img/ander.png" id="goemon_descbutton_img"></h2>
+            </button>
+            <div id="goemon_desc" class="hidden">
+                <p id="info">
+                    フローラルヴィレッジからの所要時間：徒歩3分程度<br>
+                    定休日:年中無休<br>
+                    営業時間:10:00〜17:00 <br>
+                    instagram: <a href="https://www.instagram.com/goemonyufuin_official/">GOEMON yufuin 五衞門</a>
+                </p>
+                <p>
+                    <img src="./img/goemon.png" alt="goemon" onclick="location.href = 'http://yufuin-goemon.com/'">
+                    由布院 茶cha GOEMON』は、九州産抹茶を使用したドリンク、スイーツを提供する抹茶専門店です。<br>
+                    店内はカウンター席のみとなっています。<br>
+                    カウンターにはコンセントもあり、スマホなどを自由に充電することができます。<br>
+                    メニューには抹茶スイーツがずらり。
+                    抹茶ラテなどのドリンクから、抹茶パフェ、抹茶モンブランなどのスイーツ、そして茶そばもあります。
+                </p>
+            </div>
+        </section>
+        <h1 id="place">京都</h1>
+        <section id="teawave">
+            <button id="teawave_descbutton" onclick="descbutton('teawave')">
+                <h2><img src="./img/ander.png" id="teawave_descbutton_img"></h2>
+            </button>
+            <div id="teawave_desc" class="hidden">
+                <p id="info">
+                    京都駅からの所要時間：徒歩37分程度<br>
+                    定休日:年中無休<br>
+                    営業時間:10:00〜17:00 <br>
+                    instagram: <a href="https://www.instagram.com/goemonyufuin_official/">GOEMON yufuin 五衞門</a>
+                </p>
+                <p>
+                    <img src="./img/goemon.png" alt="goemon" onclick="location.href = 'http://yufuin-goemon.com/'">
+                    由布院 茶cha GOEMON』は、九州産抹茶を使用したドリンク、スイーツを提供する抹茶専門店です。<br>
+                    店内はカウンター席のみとなっています。<br>
+                    カウンターにはコンセントもあり、スマホなどを自由に充電することができます。<br>
+                    メニューには抹茶スイーツがずらり。
+                    抹茶ラテなどのドリンクから、抹茶パフェ、抹茶モンブランなどのスイーツ、そして茶そばもあります。
                 </p>
             </div>
         </section>
     </main>
 </body>
 <script src="./script/tool/common.js"></script>
-<script src="./script/activity.js"></script>
+<script src="./script/information.js"></script>
 
 </html>
