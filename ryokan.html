@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tool/common.css">
+    <link rel="stylesheet" href="./css/ryokan.css">
+    <title>旅館情報</title>
+</head>
+
+<body>
+    <header>
+    <h1>旅館情報</h1>
+    <button onclick="openModel()"><img src="./img/menu.png" alt="メニュー"></button>
+    <div id="model" class="model-overlay">
+        <div class="model-content">
+            <h2 onclick="closeModel()">別府旅行</h2>
+            <section id="" class="overlay" onclick="location.href = './schedule.html'">
+                <img src="./img/left.png" alt="left">
+                <h3>スケジュール</h3>
+            </section>
+            <section class="overlay" onclick="location.href = './ryokan.html'">
+                <img src="./img/left.png" alt="left">
+                <h3>旅館情報</h3>
+            </section>
+            <section class="overlay" onclick="location.href = './information.html'">
+                <img src="./img/left.png" alt="left">
+                <h3>インフォメーション</h3>
+            </section>
+            <section class="overlay" onclick="location.href = './map.html'">
+                <img src="./img/left.png" alt="left">
+                <h3>近辺マップ</h3>
+            </section>
+        </div>
+    </div>
+    </header>
+    <main>
+        <!-- スライドの外枠 -->
+        <div class="slide-wrapper">
+            <!-- スライド（コンテンツ） -->
+            <div id="slide" class="slide">
+                <div>
+                    <img src="./img/sakuratei_1.png" onclick="location.href = 'https://gloria-g.com/sakuratei/'">
+                </div>
+                <div>
+                    <img src="./img/sakuratei_2.png" onclick="location.href = 'https://gloria-g.com/sakuratei/'">
+                </div>
+                <div>
+                    <img src="./img/sakuratei_3.png" onclick="location.href = 'https://gloria-g.com/sakuratei/'">
+                </div>
+                <div>
+                    <img src="./img/sakuratei_4.png" onclick="location.href = 'https://gloria-g.com/sakuratei/'">
+                </div>
+            </div>
+            <!-- 左右のボタン -->
+            <button><span id="prev" class="prev"></span></button>
+            <button><span id="next" class="next"></span></button>
+            <!-- インジケーター -->
+            <ul class="indicator" id="indicator">
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+                <li class="list"></li>
+            </ul>
+        </div>
+    </main>
+</body>
+<script src="./script/tool/common.js"></script>
+<script src="./script/information.js"></script>
+
+</html>

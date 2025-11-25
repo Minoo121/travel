@@ -1,132 +1,242 @@
-main{
-    margin-top: -10px;
-}
+/********************************************************* */
+/*ひょうたん温泉*/
+/********************************************************* */
 
-/* ↓ スライドの外枠 */
-.slide-wrapper {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-    /* はみ出したスライドを隠す */
-}
-
-/*  ↓ スライド（コンテンツ） */
-.slide {
-    /*スライド全体 */
-    width: 400%;
+#hyoutan_descbutton {
+    margin: 0;
+    padding: 10px;
     height: 100%;
-    display: flex;
-    transition: all 1.5s;
-}
-
-.slide div {
-    /* スライド */
-    width: 25%;
-    height: 100%;
-    font-size: 16px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.slide div img {
     width: 100%;
-    height: auto;
-}
-
-.slide1 {
-    /* スライドさせるために必要なクラス */
-    transform: translateX(0);
-}
-
-.slide2 {
-    /* スライドさせるために必要なクラス */
-    transform: translateX(-25%);
-}
-
-.slide3 {
-    /* スライドさせるために必要なクラス */
-    transform: translateX(-50%);
-}
-
-.slide4 {
-    /* スライドさせるために必要なクラス */
-    transform: translateX(-75%);
-}
-
-.slide div:nth-of-type(1) {
-    background-color: none;
-}
-
-.slide div:nth-of-type(2) {
-    background-color: none;
-}
-
-.slide div:nth-of-type(3) {
-    background-color: none;
-}
-
-.slide div:nth-of-type(4) {
-    background-color: none;
-}
-
-/* ↓ 左右のボタン */
-.next {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    right: 10px;
-    bottom: 50%;
-    z-index: 10;
-    border-top: solid 3px #000;
-    border-right: solid 3px #000;
-    -webkit-transform: rotate(45deg) translateY(50%);
-    transform: rotate(45deg) translateY(50%);
-}
-
-.prev {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    left: 25px;
-    bottom: 50%;
-    z-index: 10;
-    border-top: solid 3px #000;
-    border-right: solid 3px #000;
-    -webkit-transform: rotate(-135deg) translateY(-50%);
-    transform: rotate(-135deg) translateY(-50%);
-}
-
-/* ↓ インジケーター */
-.indicator {
-    margin-left: 25%;
-    margin-right: 25%;
-    width: 100%;
-    position: absolute;
-    bottom: 20px;
-    display: flex;
-    column-gap: 18px;
-    z-index: 10;
-    align-items: center;
-}
-
-.indicator {
     border: none;
-    color: none;
     background: none;
 }
 
-.indicator li {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    list-style: none;
-    background-color: #fff;
-    border: 2px #000 solid;
+#hyoutan_desc {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.25s ease;
 }
 
-.indicator li:first-of-type {
-    background-color: #000;
+
+#hyoutan_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#hyoutan_desc.opening,
+#hyoutan_desc.closing,
+#hyoutan_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#hyoutan_desc.open {
+    opacity: 1;
+}
+
+#hyoutan_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#hyoutan_descbutton img {
+    margin-bottom: -5px;
+    height: 25.2px;
+    width: 25.2px;
+}
+
+/********************************************************* */
+/*香り博物館*/
+/********************************************************* */
+
+#kaori_descbutton {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+#kaori_desc {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.25s ease;
+}
+
+
+#kaori_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#kaori_desc.opening,
+#kaori_desc.closing,
+#kaori_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#kaori_desc.open {
+    opacity: 1;
+}
+
+#kaori_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#kaori_descbutton img {
+    margin-bottom: -5px;
+    height: 25.2px;
+    width: 25.2px;
+}
+
+
+/********************************************************* */
+/*湯布院フローラルヴィレッジ*/
+/********************************************************* */
+
+#yufuin_descbutton {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+#yufuin_desc {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.35s ease;
+    display: block;
+    /* ← display:none は使わない */
+}
+
+#yufuin_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#yufuin_desc.opening,
+#yufuin_desc.closing,
+#yufuin_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#yufuin_desc.open {
+    opacity: 1;
+}
+
+#yufuin_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#yufuin_descbutton img {
+    margin-bottom: -5px;
+    height: 25.2px;
+    width: 25.2px;
+}
+
+/********************************************************* */
+/*保養ランド*/
+/********************************************************* */
+
+#hoyou_descbutton {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+#hoyou_desc {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.35s ease;
+    display: block;
+    /* ← display:none は使わない */
+}
+
+#hoyou_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#hoyou_desc.opening,
+#hoyou_desc.closing,
+#hoyou_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#hoyou_desc.open {
+    opacity: 1;
+}
+
+#hoyou_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#hoyou_descbutton img {
+    margin-bottom: -5px;
+    height: 25.2px;
+    width: 25.2px;
+}
+
+/********************************************************* */
+/*全体*/
+/********************************************************* */
+
+main section {
+    width: 90vw;
+    margin: 11% auto;
+    border: 2px solid #333;
+    position: relative;
+}
+
+section h2 {
+    border-bottom: solid 1px black;
+}
+
+h3{
+    text-align: center;
+}
+
+#subtitle{
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
 }
