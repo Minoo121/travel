@@ -231,3 +231,7 @@ main section {
 section h2 {
     border-bottom: solid 1px black;
 }
+
+h5{
+    text-align: center;
+}
