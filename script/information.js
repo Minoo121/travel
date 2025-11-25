@@ -1,63 +1,44 @@
-//********************************************************* */
-//宣言
-//********************************************************* */
-const slide = document.getElementById('slide');
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const indicator = document.getElementById('indicator');
-const lists = document.querySelectorAll('.list');
-const totalSlides = lists.length;
-let count = 0;
-let autoPlayInterval;
+function descbutton(name) {
+    const desc = document.getElementById(name + '_desc');
+    const img = document.getElementById(name + '_descbutton_img');
+    if (!desc) return;
 
-//********************************************************* */
-//部品（メソッド）
-//********************************************************* */
-function updateListBackground() {
-    for (let i = 0; i < lists.length; i++) {
-        lists[i].style.backgroundColor = i === count % totalSlides ? '#000' : '#fff';
+    const isHidden = desc.classList.contains('hidden');
+
+    if (isHidden) {
+        // ---- 開く（するっと） ----
+        desc.classList.remove('hidden');
+        desc.classList.add('opening');
+
+        desc.style.height = 'auto';
+        const fullHeight = desc.scrollHeight + 'px';
+
+        desc.style.height = '0px';
+        desc.offsetHeight;  // reflow
+        desc.style.height = fullHeight;
+
+        setTimeout(() => {
+            desc.classList.remove('opening');
+            desc.classList.add('open');
+            desc.style.height = 'auto';
+        }, 350);
+
+        if (img) img.src = './img/apper.png';
+
+    } else {
+        // ---- 閉じる（スッと） ----
+        desc.classList.remove('open');
+
+        const currentHeight = desc.scrollHeight + 'px';
+        desc.style.height = currentHeight;
+
+        desc.offsetHeight; // reflow
+        desc.style.height = '0px';
+
+        setTimeout(() => {
+            desc.classList.add('hidden');
+        }, 350);
+
+        if (img) img.src = './img/ander.png';
     }
 }
-function nextClick() {
-    slide.classList.remove(`slide${count % totalSlides + 1}`);
-    count++;
-    slide.classList.add(`slide${count % totalSlides + 1}`);
-    updateListBackground();
-}
-function prevClick() {
-    slide.classList.remove(`slide${count % totalSlides + 1}`);
-    count--;
-    if (count < 0) count = totalSlides - 1;
-    slide.classList.add(`slide${count % totalSlides + 1}`);
-    updateListBackground();
-}
-function startAutoPlay() {
-    autoPlayInterval = setInterval(nextClick, 5000);
-}
-function resetAutoPlayInterval() {
-    clearInterval(autoPlayInterval);
-    startAutoPlay();
-}
-
-//********************************************************* */
-//クリックイベント
-//********************************************************* */
-next.addEventListener('click', () => {
-    nextClick();
-    resetAutoPlayInterval();
-});
-prev.addEventListener('click', () => {
-    prevClick();
-    resetAutoPlayInterval();
-});
-indicator.addEventListener('click', (event) => {
-    if (event.target.classList.contains('list')) {
-        const index = Array.from(lists).indexOf(event.target);
-        slide.classList.remove(`slide${count % totalSlides + 1}`);
-        count = index;
-        slide.classList.add(`slide${count % totalSlides + 1}`);
-        updateListBackground();
-        resetAutoPlayInterval();
-    }
-});
-startAutoPlay();

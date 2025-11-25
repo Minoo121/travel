@@ -218,6 +218,116 @@
 }
 
 /********************************************************* */
+/*GOEMON*/
+/********************************************************* */
+
+#goemon_descbutton {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+#goemon_desc {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.35s ease;
+    display: block;
+    /* ← display:none は使わない */
+}
+
+#goemon_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#goemon_desc.opening,
+#goemon_desc.closing,
+#goemon_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#goemon_desc.open {
+    opacity: 1;
+}
+
+#goemon_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#goemon_descbutton img {
+    margin-bottom: -5px;
+    height: 25.2px;
+    width: 25.2px;
+}
+
+/********************************************************* */
+/*GOEMON*/
+/********************************************************* */
+
+#teawave_descbutton {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+#teawave_desc {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.35s ease;
+    display: block;
+    /* ← display:none は使わない */
+}
+
+#teawave_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#teawave_desc.opening,
+#teawave_desc.closing,
+#teawave_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#teawave_desc.open {
+    opacity: 1;
+}
+
+#teawave_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#teawave_descbutton img {
+    margin-bottom: -5px;
+    height: 25.2px;
+    width: 25.2px;
+}
+
+/********************************************************* */
 /*全体*/
 /********************************************************* */
 
@@ -232,11 +342,23 @@ section h2 {
     border-bottom: solid 1px black;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
-#subtitle{
+#subtitle {
     border-bottom: solid 1px black;
     border-top: solid 1px black;
+}
+
+#place {
+    text-align: center;
+    margin: 0 60px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+#info{
+    text-align: center;
+    border-bottom: solid 1px black;
 }
