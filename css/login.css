@@ -1,31 +1,37 @@
+/* ★ body の flex を消す（これが iPhone のバグ原因） */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
-body main {
+/* main を中央寄せする方法を統一 */
+main {
     position: fixed;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
 }
 
+/* 画像 */
 img {
     margin-bottom: 20%;
 }
 
+/* タイトル */
 h1 {
     white-space: nowrap;
     margin-bottom: 10%;
 }
 
+/* 入力欄 */
 input {
     height: 30px;
     font-size: large;
 }
 
+/* ボタン */
 button {
     font-size: large;
     margin-top: 20%;
@@ -37,26 +43,21 @@ button {
 }
 
 button:active {
-    margin-top: 20%;
-    height: 50px;
-    width: 80%;
     border-radius: 20px;
     color: #fff;
     background: #000;
-    margin-bottom: 20%;
 }
 
+/* エラー表示 */
 #error {
     position: absolute;
     left: 50%;
     top: 120px;
-    /* 好きな位置に調整 */
     transform: translateX(-50%);
     color: red;
     visibility: hidden;
-    /* ← レイアウトに影響しない */
 }
 
 #error.show {
-    visibility: visible; /* ← 表示 */
+    visibility: visible;
 }
