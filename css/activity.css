@@ -232,6 +232,11 @@ section h2 {
     border-bottom: solid 1px black;
 }
 
-h5{
+h3{
     text-align: center;
+}
+
+#subtitle{
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
 }
