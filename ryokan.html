@@ -11,31 +11,32 @@
 
 <body>
     <header>
-    <h1>旅館情報</h1>
-    <button onclick="openModel()"><img src="./img/menu.png" alt="メニュー"></button>
-    <div id="model" class="model-overlay">
-        <div class="model-content">
-            <h2 onclick="closeModel()">別府旅行</h2>
-            <section id="" class="overlay" onclick="location.href = './schedule.html'">
-                <img src="./img/left.png" alt="left">
-                <h3>スケジュール</h3>
-            </section>
-            <section class="overlay" onclick="location.href = './ryokan.html'">
-                <img src="./img/left.png" alt="left">
-                <h3>旅館情報</h3>
-            </section>
-            <section class="overlay" onclick="location.href = './information.html'">
-                <img src="./img/left.png" alt="left">
-                <h3>インフォメーション</h3>
-            </section>
-            <section class="overlay" onclick="location.href = './map.html'">
-                <img src="./img/left.png" alt="left">
-                <h3>近辺マップ</h3>
-            </section>
+        <h1>旅館情報</h1>
+        <button onclick="openModel()"><img src="./img/menu.png" alt="メニュー"></button>
+        <div id="model" class="model-overlay">
+            <div class="model-content">
+                <h2 onclick="closeModel()">別府旅行</h2>
+                <section id="" class="overlay" onclick="location.href = './schedule.html'">
+                    <img src="./img/left.png" alt="left">
+                    <h3>スケジュール</h3>
+                </section>
+                <section class="overlay" onclick="location.href = './ryokan.html'">
+                    <img src="./img/left.png" alt="left">
+                    <h3>旅館情報</h3>
+                </section>
+                <section class="overlay" onclick="location.href = './information.html'">
+                    <img src="./img/left.png" alt="left">
+                    <h3>インフォメーション</h3>
+                </section>
+                <section class="overlay" onclick="location.href = './map.html'">
+                    <img src="./img/left.png" alt="left">
+                    <h3>近辺マップ</h3>
+                </section>
+            </div>
         </div>
-    </div>
     </header>
     <main>
+        <h3 id="subtitle">鉄輪温泉　絶景の宿　さくら亭</h3>
         <!-- スライドの外枠 -->
         <div class="slide-wrapper">
             <!-- スライド（コンテンツ） -->
@@ -64,6 +65,40 @@
                 <li class="list"></li>
             </ul>
         </div>
+        <section>
+            <h3>予約情報</h3>
+            <table>
+                <tr>
+                    <th>チェックイン</th>
+                    <th></th>
+                    <th>チェックアウト</th>
+                </tr>
+                <tr>
+                    <td>2026年3月3日(火) 18:00</td>
+                    <td>→</td>
+                    <td>2026年3月5日(木) 12:00</td>
+                </tr>
+            </table>
+            <p>
+                <a href="https://mypage.travel.rakuten.co.jp/?l-id=trv_header_func_mypage&">楽天トラベルマイページ</a>
+            </p>
+        </section>
+        <section>
+            <p>
+            <h3>温泉</h3>
+            <p id="subtitle">家族風呂</p>
+            大パノラマが広がる展望露天風呂 天の湯・空の湯<br>
+            別府湾の風を感じる半露天風呂 梅・楓・桜・椿
+            <h5>
+                上記の天然温泉をたっぷりと。開放感溢れる家族風呂。眼下には別府湾、振り返ると鶴見岳を望めます。<br>
+                ご宿泊のお客様は無料で何度でもご利用いただけます。<br>（予約制ではありません。）<br>
+                なお、男女ともに大浴場もご宿泊のお客様はご滞在中いつでもご利用いただけます。
+            </h5>
+            <p id="subtitle">食事</p>
+            さくら亭では、厳選された新鮮な海の幸、山の幸を、料理人が腕をふるい、美味しさを最大限に引き出し、味わっていただきます。<br>
+            ご家族やパートナー、そしてご友人とお楽しみください。<br>
+            </p>
+        </section>
     </main>
 </body>
 <script src="./script/tool/common.js"></script>
