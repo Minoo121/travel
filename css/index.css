@@ -1,50 +1,44 @@
 body {
-    text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
-
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    min-height: -webkit-fill-available;
+    min-height: 100dvh; /* ←重要 */
 }
 
 main {
     width: 100%;
-    position: relative; /* ★ これが絶対に必要 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* 画像 */
 img {
-    margin-bottom: 20%;
+    margin-bottom: 40px;
 }
 
-/* タイトル */
 h1 {
-    white-space: nowrap;
-    margin-bottom: 10%;
+    margin-bottom: 20px;
 }
 
-/* 入力欄 */
 input {
     height: 30px;
     font-size: large;
 }
 
-/* ボタン */
 button {
     font-size: large;
-    margin-top: 20%;
     height: 50px;
     width: 80%;
     border-radius: 25px;
     background-color: white;
-    margin-bottom: 20%;
-
+    margin-top: 40px;
+    margin-bottom: 40px;
     position: relative;
-    z-index: 1000; /* ★ 透明要素より前面に */
+    z-index: 1000;
 }
 
 button:active {
@@ -52,15 +46,10 @@ button:active {
     background: #000;
 }
 
-/* エラー表示 */
 #error {
-    position: absolute;
-    top: 100px; /* ★ ボタンの上に来ない位置へ */
-    left: 50%;
-    transform: translateX(-50%);
     color: red;
+    margin-top: 10px;
     visibility: hidden;
-    z-index: 10; /* ボタンより下 */
 }
 
 #error.show {
