@@ -1,6 +1,9 @@
 //********************************************************* */
 //汎用
 //********************************************************* */
+const err = document.getElementById("error");
+err.style.background = "rgba(255,0,0,0.3)";
+
 const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));//timeはミリ秒
 
 function toHankaku(input) {
