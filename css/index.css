@@ -42,7 +42,7 @@ button {
     height: 50px;
     width: 80%;
     border-radius: 25px;
-    background-color: white;
+    background-color: #fefefe;
     margin-top: 40px;
     margin-bottom: 40px;
     z-index: 10; /* ← 最前面 */
