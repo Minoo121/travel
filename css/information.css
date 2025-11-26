@@ -328,6 +328,61 @@
 }
 
 /********************************************************* */
+/*森半*/
+/********************************************************* */
+
+#morihan_descbutton {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+#morihan_desc {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:
+        height 0.35s ease,
+        opacity 0.35s ease;
+    display: block;
+    /* ← display:none は使わない */
+}
+
+#morihan_desc.hidden {
+    height: 0;
+    opacity: 0;
+}
+
+
+/* 開く準備状態（高さ計測のために display:block にする） */
+#morihan_desc.opening,
+#morihan_desc.closing,
+#morihan_desc.open {
+    display: block;
+}
+
+/* 開いている状態 */
+#morihan_desc.open {
+    opacity: 1;
+}
+
+#morihan_desc img {
+    display: block;
+    margin: auto;
+    width: 275px;
+    height: 183px;
+}
+
+#morihan_descbutton img {
+    margin-bottom: -5px;
+    height: 25.2px;
+    width: 25.2px;
+}
+
+/********************************************************* */
 /*全体*/
 /********************************************************* */
 
