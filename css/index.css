@@ -1,9 +1,12 @@
 /* 画面スクロール禁止 */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    overflow: hidden;     /* ← スクロール完全オフ */
-    height: 100dvh;       /* ← Safari でも正しく画面高さになる */
+    overflow: hidden;
+    /* ← スクロール完全オフ */
+    height: 100dvh;
+    /* ← Safari でも正しく画面高さになる */
 }
 
 body {
@@ -42,16 +45,25 @@ button {
     height: 50px;
     width: 80%;
     border-radius: 25px;
-    background-color: #fefefe;
+
+    background-color: #fefefe !important;
+    /* ← 真っ白を避ける */
+    color: #000;
+
     margin-top: 40px;
     margin-bottom: 40px;
-    z-index: 10; /* ← 最前面 */
+
     position: relative;
+    z-index: 10;
+
+    -webkit-appearance: none;
+    /* ← Safari特殊仕様をオフ */
+    appearance: none;
 }
 
 button:active {
     color: #fff;
-    background: #000;
+    background-color: #0a0a0a !important;
 }
 
 /* エラーメッセージ：絶対位置禁止！ */
@@ -59,7 +71,8 @@ button:active {
     color: red;
     margin-top: 10px;
     visibility: hidden;
-    position: static; /* ← 重要：absoluteを禁止 */
+    position: static;
+    /* ← 重要：absoluteを禁止 */
 }
 
 #error.show {
