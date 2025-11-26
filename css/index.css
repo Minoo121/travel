@@ -1,27 +1,19 @@
-/* 透明なオーバーレイがかぶっていると誤判定されるため */
-body,
-main {
-    pointer-events: auto !important;
-}
-
-
-/* ★ body の flex を消す（これが iPhone のバグ原因） */
 body {
     text-align: center;
     margin: 0;
     padding: 0;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Safari の高さバグ対策 */
+    min-height: -webkit-fill-available;
 }
 
-/* main を中央寄せする方法を統一 */
 main {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    will-change: transform;
-    pointer-events: auto;
+    width: 100%;
 }
 
 /* 画像 */
@@ -51,8 +43,7 @@ button {
     background-color: white;
     margin-bottom: 20%;
     position: relative;
-    z-index: 9999;
-    pointer-events: auto;
+    z-index: 2;
 }
 
 button:active {
