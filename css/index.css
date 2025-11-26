@@ -1,12 +1,16 @@
-body {
+/* 画面スクロール禁止 */
+html, body {
     margin: 0;
     padding: 0;
+    overflow: hidden;     /* ← スクロール完全オフ */
+    height: 100dvh;       /* ← Safari でも正しく画面高さになる */
+}
+
+body {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    min-height: 100dvh; /* ←重要 */
 }
 
 main {
@@ -16,19 +20,23 @@ main {
     align-items: center;
 }
 
+/* 画像 */
 img {
     margin-bottom: 40px;
 }
 
+/* タイトル */
 h1 {
     margin-bottom: 20px;
 }
 
+/* 入力欄 */
 input {
     height: 30px;
     font-size: large;
 }
 
+/* ボタン */
 button {
     font-size: large;
     height: 50px;
@@ -37,8 +45,8 @@ button {
     background-color: white;
     margin-top: 40px;
     margin-bottom: 40px;
+    z-index: 10; /* ← 最前面 */
     position: relative;
-    z-index: 1000;
 }
 
 button:active {
@@ -46,10 +54,12 @@ button:active {
     background: #000;
 }
 
+/* エラーメッセージ：絶対位置禁止！ */
 #error {
     color: red;
     margin-top: 10px;
     visibility: hidden;
+    position: static; /* ← 重要：absoluteを禁止 */
 }
 
 #error.show {
