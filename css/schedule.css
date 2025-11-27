@@ -89,7 +89,6 @@
 /********************************************************* */
 main {
     display: grid;
-    position: fixed;
     max-width: 100vw;
     max-height: 100vh;
     grid-template-columns: 50% 50%;
