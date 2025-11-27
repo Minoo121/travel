@@ -76,3 +76,8 @@ button:active {
 #error.show {
     visibility: visible;
 }
+
+#ver{
+    padding: 0;
+    margin: 0;
+}
