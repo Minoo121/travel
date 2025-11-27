@@ -25,6 +25,43 @@
     display: inline-block;
 }
 
+/*オーバーレイレイアウト*/
+.three_day_model-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 9999;
+}
+
+.three_day_model-content {
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: 35%;
+    width: 90%;
+    z-index: 10000;
+    animation: slideUp 0.3s;
+    border-radius: 50px;
+    border: solid 1px black;
+}
+
+.three_day_overlay {
+    border-bottom: solid 1px black;
+}
+
+.three_day_overlay h4{
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0 0 0;
+}
+
 /********************************************************* */
 /*３月４日*/
 /********************************************************* */
@@ -84,6 +121,44 @@
     display: inline-block;
 }
 
+/*オーバーレイレイアウト*/
+.five_day_model-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 9999;
+}
+
+.five_day_model-content {
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: 35%;
+    width: 90%;
+    z-index: 10000;
+    animation: slideUp 0.3s;
+    border-radius: 50px;
+    border: solid 1px black;
+}
+
+.five_day_overlay {
+    border-bottom: solid 1px black;
+}
+
+.five_day_overlay h4{
+    text-align: center;
+    padding: 0px;
+    margin: 10px 0 0 0;
+}
+
+
 /********************************************************* */
 /*全体*/
 /********************************************************* */
@@ -98,4 +173,21 @@ main {
 main img {
     width: 200px;
     height: 140px;
+}
+
+/********************************************************* */
+/*オーバーレイ*/
+/********************************************************* */
+
+/*オーバーレイメソッド*/
+@keyframes slideUp {
+    from {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

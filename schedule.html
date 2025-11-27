@@ -11,32 +11,39 @@
 
 <body>
     <header>
-    <h1>スケジュール</h1>
-    <button onclick="openModel()"><img src="./img/menu.png" alt="メニュー"></button>
-    <div id="model" class="model-overlay">
-        <div class="model-content">
-            <h2 onclick="closeModel()">別府旅行</h2>
-            <section id="" class="overlay" onclick="location.href = './schedule.html'">
-                <img src="./img/left.png" alt="left">
-                <h3>スケジュール</h3>
-            </section>
-            <section class="overlay" onclick="location.href = './ryokan.html'">
-                <img src="./img/left.png" alt="left">
-                <h3>旅館情報</h3>
-            </section>
-            <section class="overlay" onclick="location.href = './information.html'">
-                <img src="./img/left.png" alt="left">
-                <h3>インフォメーション</h3>
-            </section>
-            <section class="overlay" onclick="location.href = './map.html'">
-                <img src="./img/left.png" alt="left">
-                <h3>近辺マップ</h3>
-            </section>
+        <h1>スケジュール</h1>
+        <button onclick="openModel()"><img src="./img/menu.png" alt="メニュー"></button>
+        <div id="model" class="model-overlay">
+            <div class="model-content">
+                <h2 onclick="closeModel()">別府旅行</h2>
+                <section class="overlay" onclick="location.href = './schedule.html'">
+                    <img src="./img/left.png" alt="left">
+                    <h3>スケジュール</h3>
+                </section>
+                <section class="overlay" onclick="location.href = './ryokan.html'">
+                    <img src="./img/left.png" alt="left">
+                    <h3>旅館情報</h3>
+                </section>
+                <section class="overlay" onclick="location.href = './information.html'">
+                    <img src="./img/left.png" alt="left">
+                    <h3>インフォメーション</h3>
+                </section>
+                <section class="overlay" onclick="location.href = './map.html'">
+                    <img src="./img/left.png" alt="left">
+                    <h3>近辺マップ</h3>
+                </section>
+            </div>
         </div>
-    </div>
     </header>
     <main>
-        <section id="three_day">
+        <section id="three_day" onclick="three_day_openModel()">
+            <div id="three_day_model" class="three_day_model-overlay">
+                <div class="three_day_model-content">
+                    <section class="three_day_overlay">
+                        <h4>飛行機の予定</h4>
+                    </section>
+                </div>
+            </div>
             <table>
                 <tr>
                     <th colspan="2">
@@ -77,7 +84,14 @@
             </table>
             <tr>
         </section>
-        <section id="five_day">
+        <section id="five_day" onclick="five_day_openModel()">
+            <div id="five_day_model" class="five_day_model-overlay">
+                <div class="five_day_model-content">
+                    <section class="five_day_overlay">
+                        <h4>新幹線の予定</h4>
+                    </section>
+                </div>
+            </div>
             <table>
                 <tr>
                     <th colspan="2">
@@ -99,5 +113,6 @@
     </main>
 </body>
 <script src="./script/tool/common.js"></script>
+<script src="./script/schedule.js"></script>
 
 </html>
