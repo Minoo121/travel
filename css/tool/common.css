@@ -21,7 +21,7 @@
 
 header {
     display: flex;
-    background-color:rgba(255,255,255,0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -43,7 +43,9 @@ body {
     background-image: url("../../img/back.png");
     background-size: cover;
     background-position: center;
-    
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: lighten;
+
 }
 
 main {
