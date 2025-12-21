@@ -1,11 +1,31 @@
 main {
   max-height: fit-content;
   position: fixed;
+  text-align: center;
 }
 
 main iframe {
   position: relative;
-  aspect-ratio: 100/183;
+  aspect-ratio: 107/183;
   width: 100vw;
   left: -2%;
+}
+
+#search{
+  margin: 10px 0px;
+}
+
+input {
+  text-align: center;
+  border-radius: 10px;
+  width: 70vw;
+  height: 25px;
+}
+
+button{
+  height: 25px;
+  width: 60px;
+  margin-left: 5px;
+  background-color: #f3f3f3;
+  border: solid 1px black;
 }
