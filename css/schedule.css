@@ -44,7 +44,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    height: 25%;
+    height: 30%;
     width: 90%;
     z-index: 10000;
     animation: slideUp 0.3s;
@@ -59,12 +59,9 @@
     margin: 10px 0 0 0;
 }
 
-.three_day_overlay p {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.three_day_overlay tr td time {
+    border-bottom: black 1px solid;
 }
-
 /********************************************************* */
 /*３月４日*/
 /********************************************************* */
@@ -143,7 +140,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    height: 45%;
+    height: 49%;
     width: 90%;
     z-index: 10000;
     animation: slideUp 0.3s;
@@ -164,7 +161,9 @@
     text-align: center;
 }
 
-
+.five_day_overlay tr td time {
+    border-bottom: black 1px solid;
+}
 /********************************************************* */
 /*全体*/
 /********************************************************* */
@@ -184,6 +183,14 @@ main img {
 /********************************************************* */
 /*オーバーレイ*/
 /********************************************************* */
+
+#arrow{
+    text-align: center;
+}
+
+#total{
+    text-align: center;
+}
 
 /*オーバーレイメソッド*/
 @keyframes slideUp {
